@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { actionCreators } from './store'
 
 function ImageGallary (props) {
-  const { list } = props
+  const { list, getImages } = props;
+  useEffect(() => {
+    getImages()
+  }, [])
   return (
     <div>
-
+      {list.map(item => (
+        <img src={item} key={item} />
+      ))}
     </div>
   )
 }
@@ -16,6 +22,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    getImages () {
+      dispatch(actionCreators.getImages())
+    }
   }
 }
 
