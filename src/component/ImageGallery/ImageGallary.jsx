@@ -1,12 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-function ImageGallary () {
+function ImageGallary (props) {
+  const { list } = props
   return (
     <div>
-      showing
+
     </div>
   )
 }
 
-export default connect()(ImageGallary)
+const mapStateToProps = (state) => ({
+  list: state.imageGallery.imageList
+})
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ImageGallary)
