@@ -8,7 +8,7 @@ export const getImages = () => {
       let thumbArr = []
       results.map(result => thumbArr.push(result.urls.thumb))
       dispatch(setList(thumbArr))
-    })
+    }).catch();
   }
 }
 

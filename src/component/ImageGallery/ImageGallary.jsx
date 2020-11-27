@@ -9,7 +9,7 @@ function ImageGallary (props) {
     getImages()
   }, [getImages])
   return (
-    <div>
+    <div data-test="gallery-wrapper">
       <h1 className="heading">Welcome to Pikcha!</h1>
       <div className="flex-container">
         {list.map(item => (
