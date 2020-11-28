@@ -2,7 +2,7 @@ import axios from 'axios';
 import { GET_IMAGE_LIST } from './constants';
 
 export const getImages = () => {
-  return (dispatch) => {
+  return dispatch => {
     axios.get('https://api.unsplash.com/photos/?client_id=9XLAQ6teZ78CjVABioT7aGjEmOgOiHBf_Z9_5DlxWT8').then((res) => {
       const results = res.data;
       let thumbArr = []
