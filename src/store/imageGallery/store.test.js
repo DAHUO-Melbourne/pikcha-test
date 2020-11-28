@@ -1,4 +1,4 @@
-import { testStore } from '../../../utils/testUtils';
+import { testStore } from '../../utils/testUtils';
 import reducer from './reducer';
 import * as constants from './constants';
 import { getImages } from './actionCreators';

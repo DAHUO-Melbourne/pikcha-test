@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from './store';
+import { actionCreators } from '../../store/imageGallery';
 import './ImageGallary.css';
 
 function ImageGallary ({ list, getImages }) {
