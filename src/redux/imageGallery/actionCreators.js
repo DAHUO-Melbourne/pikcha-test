@@ -1,5 +1,5 @@
 import axios from 'axios';
-import * as constants from './constants';
+import { GET_IMAGE_LIST } from './constants';
 
 export const getImages = () => {
   return (dispatch) => {
@@ -13,6 +13,6 @@ export const getImages = () => {
 }
 
 export const setList = (data) => ({
-  type: constants.GET_IMAGE_LIST,
+  type: GET_IMAGE_LIST,
   data: data
 })
