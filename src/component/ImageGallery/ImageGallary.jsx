@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import './ImageGallary.css';
 
-function ImageGallary (props) {
-  const { list, getImages } = props;
+function ImageGallary ({ list, getImages }) {
   useEffect(() => {
     getImages()
   }, [getImages])
