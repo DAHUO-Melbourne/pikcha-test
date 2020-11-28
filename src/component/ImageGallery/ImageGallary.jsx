@@ -12,8 +12,10 @@ function ImageGallary (props) {
     <div data-test="gallery-wrapper">
       <h1 className="heading">Welcome to Pikcha!</h1>
       <div className="flex-container">
-        {list.map(item => (
-          <img src={item} key={item} alt="img" />
+        {list.map((item, index) => (
+          <div key={index}>
+            <img src={item} alt="img" />
+          </div>
         ))}
       </div>
     </div>
