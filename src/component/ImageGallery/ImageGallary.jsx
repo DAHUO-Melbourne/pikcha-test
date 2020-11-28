@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from '../../redux/imageGallery';
-import './ImageGallary.css';
+import './ImageGallary.scss';
 
 function ImageGallary ({ list, getImages }) {
   useEffect(() => {
