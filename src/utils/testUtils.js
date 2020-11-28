@@ -1,5 +1,5 @@
 import { middlewares } from '../store/index';
-import rootReducer from '../store/reducer';
+import rootReducer from '../store/root-reducer';
 import { applyMiddleware, createStore } from 'redux';
 
 export const findByTestAttr = (component, attr) => {
