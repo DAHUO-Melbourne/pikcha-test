@@ -1,8 +1,5 @@
-import { testStore } from '../../utils/testUtils';
 import reducer from './reducer';
 import { GET_IMAGE_LIST } from './constants';
-import { getImages } from './actionCreators';
-import moxios from 'moxios';
 
 describe('reducer correctly returned', () => {
   it('reducer correctly returned', () => {
