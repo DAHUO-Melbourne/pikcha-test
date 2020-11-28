@@ -10,6 +10,6 @@ describe('reducer correctly returned', () => {
       type: constants.GET_IMAGE_LIST,
       data: [1, 2, 3]
     }
-    expect(reducer({ imageList: [] }, action).imageList).toStrictEqual([1, 2, 3])
+    expect(reducer({ photos: [] }, action).photos).toStrictEqual([1, 2, 3])
   })
 })

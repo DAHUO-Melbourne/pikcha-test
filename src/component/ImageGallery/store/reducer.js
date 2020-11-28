@@ -1,7 +1,7 @@
 import * as constants from './constants'
 
 const defaultState = {
-  imageList: []
+  photos: []
 }
 
 const reducer = (state = defaultState, action) => {
@@ -9,7 +9,7 @@ const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case constants.GET_IMAGE_LIST:
       newState = JSON.parse(JSON.stringify(state));
-      newState.imageList = action.data;
+      newState.photos = action.data;
       return newState;
     default:
       return state;

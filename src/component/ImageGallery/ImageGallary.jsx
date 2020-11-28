@@ -21,7 +21,7 @@ function ImageGallary (props) {
 }
 
 const mapStateToProps = (state) => ({
-  list: state.imageGallery.imageList
+  list: state.imageGallery.photos
 })
 
 const mapDispatchToProps = (dispatch) => {

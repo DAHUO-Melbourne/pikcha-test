@@ -16,7 +16,7 @@ describe('correctly rendered', () => {
     const initialState = {
       imageGallery:
       {
-        imageList: ['img1', 'img2']
+        photos: ['img1', 'img2']
       }
     }
     wrapper = setUp(initialState);
