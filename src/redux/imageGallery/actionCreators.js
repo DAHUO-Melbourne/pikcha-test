@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_IMAGE_LIST, FETCH_URL } from './constants';
+import { GET_IMAGE_LIST, FETCH_URL, SET_ERROR } from './constants';
 
 export const getImages = () => {
   return dispatch => {
@@ -8,11 +8,17 @@ export const getImages = () => {
       let thumbArr = []
       results.map(result => thumbArr.push(result.urls.thumb))
       dispatch(setList(thumbArr))
-    }).catch();
+    }).catch(() => {
+      dispatch(setError())
+    });
   }
 }
 
 export const setList = (data) => ({
   type: GET_IMAGE_LIST,
   data: data
+})
+
+export const setError = () => ({
+  type: SET_ERROR
 })
