@@ -39,7 +39,6 @@
       transition: transform 0.3s ease-in-out 0s;
       cursor: pointer;
       &:hover {
-        transform: scale(1.4);
         filter: grayscale(100%);
       }
     }
