@@ -11,7 +11,7 @@ const setUp = (initialState = {}) => {
   return wrapper;
 };
 
-describe('correctly rendered', () => {
+describe('components correctly rendered', () => {
   let wrapper;
   beforeEach(() => {
     const initialState = {
@@ -21,7 +21,7 @@ describe('correctly rendered', () => {
     };
     wrapper = setUp(initialState);
   });
-  it('Should render correctly', () => {
+  it('wrapper Should render correctly', () => {
     const component = findByTestAttr(wrapper, 'gallery-wrapper');
     expect(component.length).toBe(1);
   });
