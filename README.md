@@ -1,5 +1,9 @@
 # pikcha Code Test
 
+## Author name and Date
+- name: Robert Huo
+- date: from 21/11/20-29/11/20
+
 ## Overview
 
 React, Redux, Redux-thunk, react-redux, Unit Test, axios.
