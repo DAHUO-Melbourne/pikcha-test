@@ -33,3 +33,13 @@ Test Coverage: 70%
 4. `npm run coverage` to get coverage.
 
 - Tool: Jest
+
+## Deployment:
+[click here](https://clever-dubinsky-be15fa.netlify.app/)
+
+## Page Effect:
+### static page
+![avatar](https://github.com/DAHUO-Melbourne/pikcha-test/blob/dev/public/images/pikcha.png)
+
+### interact GIF
+![avatar](https://github.com/DAHUO-Melbourne/pikcha-test/blob/dev/public/images/pikcha.gif)
