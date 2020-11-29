@@ -36,7 +36,6 @@
       object-fit: cover;
       width: 100%;
       height: 100%;
-      transition: transform 0.3s ease-in-out 0s;
       cursor: pointer;
       &:hover {
         filter: grayscale(100%);
