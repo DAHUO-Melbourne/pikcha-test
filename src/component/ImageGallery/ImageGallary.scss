@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+
+* {
+  font-family: 'Sansita Swashed', cursive;
+}
+
 .heading {
   text-align: center
 }
@@ -38,4 +44,9 @@
       }
     }
   }
+}
+
+.error-message {
+  text-align: center;
+  color: red;
 }

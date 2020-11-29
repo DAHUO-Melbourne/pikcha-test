@@ -18,7 +18,9 @@ function ImageGallary({ list, getImages, error }) {
         ))}
       </div>
       {error && (
-        <div>OOPS! SOME THING HAPPENS TO OUR SERVER, PLEASE WAIT A WHILE</div>
+        <div className="error-message">
+          OOPS! SOME THING HAPPENS TO OUR SERVER, PLEASE WAIT A WHILE
+        </div>
       )}
     </div>
   );
