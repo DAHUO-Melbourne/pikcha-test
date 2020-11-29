@@ -1,9 +1,9 @@
-import { GET_IMAGE_LIST, SET_ERROR } from './constants'
+import { GET_IMAGE_LIST, SET_ERROR } from './constants';
 
 const defaultState = {
   photos: [],
-  error: false
-}
+  error: false,
+};
 
 const reducer = (state = defaultState, action) => {
   let newState;
@@ -19,6 +19,6 @@ const reducer = (state = defaultState, action) => {
     default:
       return state;
   }
-}
+};
 
-export default reducer
+export default reducer;
